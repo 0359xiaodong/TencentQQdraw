@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res/com.tencentqqdraw">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aabbcc" />
+
+    <Button
+        android:id="@+id/main_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#cc000000"
+        android:text="click me! "
+        android:textColor="@android:color/white"
+        android:textSize="20sp" >
+    </Button>
+
+    <com.tencentqqdraw.reminder.DraggableFlagView
+        android:id="@+id/main_dfv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/main_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="52dp"
+        android:layout_marginLeft="74dp"
+        app:color="#FF3B30" />
+
+</RelativeLayout>
